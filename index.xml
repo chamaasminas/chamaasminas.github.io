@@ -7,10 +7,24 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
-    <lastBuildDate>Tue, 12 May 2020 01:00:34 +0100</lastBuildDate>
+    <lastBuildDate>Wed, 05 Aug 2020 20:21:42 +0100</lastBuildDate>
     
 	<atom:link href="https://chamaasminas.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Como postar no nosso blog</title>
+      <link>https://chamaasminas.github.io/posts/post1/</link>
+      <pubDate>Wed, 05 Aug 2020 20:21:42 +0100</pubDate>
+      
+      <guid>https://chamaasminas.github.io/posts/post1/</guid>
+      <description>Esse primeiro post é para explicar para as gurias que estão juntas no making off do #chamaasminas como criar posts no nosso blog ˆ-ˆ
+Antes de tudo instalar o HUGO
+1- Clonar o nosso repo do Blog no diretorio que vc desejar
+2- Entrar no diretorio do projeto
+3- Você pode rodar no terminal hudo server -D  e vai conseguir visualizar todas suas modificações no localhost:/1313
+4- Para criar outro post no terminal digite hugo new post/&amp;lt;nome-do-post-curto&amp;gt;.</description>
+    </item>
     
     <item>
       <title>Quem Somos?</title>
