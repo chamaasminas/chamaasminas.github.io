@@ -45,11 +45,11 @@ Do início: Antes de explicar o que é um container e entrar sobre a forma que u
 <h4 id="comandos-docker---listando-imagens-locais-_docker-images_">Comandos Docker - listando imagens locais &lt;_docker images_&gt;</h4>
 <p>Para verificar as imagens que você tem na sua máquina basta rodar o comando</p>
 <p><code>$ docker images</code></p>
-<p><img src="../../static/primerios-passos-com-docker/imagens/dockerimages.jpeg" alt="docker images"></p>
+<p><img src="/primerios-passos-com-docker/imagens/dockerimages.jpeg" alt="docker images"></p>
 <p>Neste caso eu tenho algumas imagens locais e a hello-world não está entre elas. Isso significa que quando eu rodar</p>
 <pre><code>$ docker run hello-world
 </code></pre><p>O Docker irá até o docker hub e disponibilizará essa imagem localmente:</p>
-<p><img src="../../static/primerios-passos-com-docker/imagens/hello-world.jpeg" alt="hello-from-docker"></p>
+<p><img src="/primerios-passos-com-docker/imagens/hello-world.jpeg" alt="hello-from-docker"></p>
 <p>Na imagem acima podemos ver o que aconteceu:</p>
 <p>Eu pedi pra rodar um container de uma imagem que não tinha localmente, o docker fez o pull do docker hub e rodou o container, imprimindo no terminal a mensagem abaixo:</p>
 <pre><code>Hello from Docker!
@@ -75,7 +75,7 @@ For more examples and ideas, visit:
 Para essa demonstração vamos utilizar <a href="https://hub.docker.com/_/golang">uma imagem da linguagem GO</a>.</p>
 <p>Primeiro vamos fazer o pull da imagem:</p>
 <pre><code>$ docker pull golang
-</code></pre><p><img src="../../static/primerios-passos-com-docker/imagens/golang-image.jpeg" alt="Pull golang"></p>
+</code></pre><p><img src="/primerios-passos-com-docker/imagens/golang-image.jpeg" alt="Pull golang"></p>
 <p>Agora que temos a imagem local, vamos rodar o seguinte comando:</p>
 <pre><code>$ docker run -it golang /bin/bash
 </code></pre><p>Entendendo o que pedimos:</p>
@@ -85,12 +85,12 @@ Para essa demonstração vamos utilizar <a href="https://hub.docker.com/_/golang
 <li>/bin/bash - É o modo do terminal que estamos abrindo - um terminal bash.</li>
 </ul>
 <p>Resumindo, fizemos o seguinte: &lsquo;<em>Docker, por favor, rode um container baseado na imagem golang, com um terminal que seja interativo, do modo bash</em>&rsquo;. Como pedimos com educação, deu certo, e agora temos uma mudança no nosso terminal:</p>
-<p><img src="../../static/primerios-passos-com-docker/imagens/run-golang.jpeg" alt="Dentro do container"></p>
+<p><img src="/primerios-passos-com-docker/imagens/run-golang.jpeg" alt="Dentro do container"></p>
 <p>Vemos agora que estamos no usuário &ldquo;root&rdquo;, no container de ID &ldquo;bea1898936a0&rdquo;, e na pasta /go.
 Se abrirmos outro terminal e verificarmos os containers que estão rodando, poderemos ver nosso container GO lá:</p>
 <h4 id="comandos-docker---listando-containers-em-execução---_docker-ps_">Comandos docker - Listando containers em execução - &lt;_docker ps_&gt;</h4>
 <p><code>$ docker ps</code></p>
-<p><img src="../../static/primerios-passos-com-docker/imagens/container-go-rodando.jpeg" alt="docker ps"></p>
+<p><img src="/primerios-passos-com-docker/imagens/container-go-rodando.jpeg" alt="docker ps"></p>
 <p>Dentro do container podemos utilizar comandos bash para transitarmos entre pastas, criarmos arquivos e editá-los da forma que quisermos. Para conhecer melhor esses comandos, acesse o artigo <a href="link.post.comandos">Comandos Linux</a> (em breve estará disponível).
 Por hora vamos fazer algo simples pra entendermos como funcionam as coisas num container:</p>
 <ol>
@@ -99,7 +99,7 @@ Por hora vamos fazer algo simples pra entendermos como funcionam as coisas num c
 <pre><code>&gt; $ cd ..
 &gt; $ mkdir teste
 &gt; $ cd teste/
-</code></pre><p><img src="../../static/primerios-passos-com-docker/imagens/dentro-container-1.jpeg" alt="passo1"></p>
+</code></pre><p><img src="/primerios-passos-com-docker/imagens/dentro-container-1.jpeg" alt="passo1"></p>
 <ol start="2">
 <li>Criar um arquivo na pasta chamado &lsquo;hello-go.go&rsquo;, com um hello-world em GO</li>
 </ol>
@@ -109,20 +109,20 @@ import \&quot;fmt\&quot;
 func main() {
     fmt.Println(\&quot;hello world\&quot;)
 }&quot; &gt; hello-go.go
-</code></pre><p><img src="../../static/primerios-passos-com-docker/imagens/dentro-container-2.jpeg" alt="passo2"></p>
+</code></pre><p><img src="/primerios-passos-com-docker/imagens/dentro-container-2.jpeg" alt="passo2"></p>
 <ol start="3">
 <li>Compilar esse arquivo e executar dentro do container.</li>
 </ol>
 <pre><code>&gt; $ go build hello-go.go
 &gt; $ ./hello-go
-</code></pre><p><img src="../../static/primerios-passos-com-docker/imagens/dentro-container-3.jpeg" alt="passo3"></p>
+</code></pre><p><img src="/primerios-passos-com-docker/imagens/dentro-container-3.jpeg" alt="passo3"></p>
 <h2 id="criando-um-container-com-terraform">Criando um container com Terraform</h2>
 <p>Já vimos que aparentemente tudo está funcionando corretamente, jóia!
 Agora vamos voltar um pouco mais para o cenário do curso e vamos rodar um container com o terraform.</p>
 <p>Vamos até o <a href="hub.docker.com">Docker Hub</a> e pesquisaremos por <em>terraform</em></p>
-<p><img src="../../static/primerios-passos-com-docker/imagens/terraform-dockerhub.jpeg" alt="terraform-dockerhub"></p>
+<p><img src="/primerios-passos-com-docker/imagens/terraform-dockerhub.jpeg" alt="terraform-dockerhub"></p>
 <p>Como no curso, escolheremos a imagem <em>hashicorp/terraform</em>, mantida pela comunidade.</p>
-<p><img src="../../static/primerios-passos-com-docker/imagens/hashicorp-terraform.jpeg" alt="Página da imagem hashicorp/terraform"></p>
+<p><img src="/primerios-passos-com-docker/imagens/hashicorp-terraform.jpeg" alt="Página da imagem hashicorp/terraform"></p>
 <p>Podemos ver as informações sobre a imagem nessa página, as mais importantes são:</p>
 <ul>
 <li>Nome</li>
@@ -134,7 +134,7 @@ Agora vamos voltar um pouco mais para o cenário do curso e vamos rodar um conta
 </ul>
 <p>Dessa vez vamos utilizar o comando <em>docker pull</em> e passaremos a tag &lsquo;light&rsquo;, a mesma que utilizamos no curso para facilitar o entendimento.</p>
 <pre><code>$ docker pull hashicorp/terraform:light
-</code></pre><p><img src="../../static/primerios-passos-com-docker/imagens/pull-terraform.jpeg" alt="Saída do comando docker pull"></p>
+</code></pre><p><img src="/primerios-passos-com-docker/imagens/pull-terraform.jpeg" alt="Saída do comando docker pull"></p>
 <p>Agora que temos a imagem salva localmente, vamos rodar um container do terraform como no curso.
 Eu salvei os arquivos da primeira aula <a href="https://github.com/chamaasminas/codigo-descomplicando-o-terraform/tree/master/Dia%2001/01%20-%20Entendendo%20o%20HCL">neste repositório</a>, você pode baixar de lá e fazer as substituições apropriadas para esse teste.</p>
 <p>Para ficar mais próximo do que foi visto do curso, vamos ter os arquivos numa pasta chamada terraform, da seguinte forma:</p>
@@ -167,19 +167,19 @@ Eu salvei os arquivos da primeira aula <a href="https://github.com/chamaasminas/
 <p>&ldquo;Ah, olá docker, eu de novo. Dessa vez por favor, rode um container a partir da imagem hashicorp/terraform, aquela que é marcada como light, crie também um volume da minha pasta local atual para a pasta /app dentro do container, faça com que as alterações que eu fizer sejam feitas nessa pasta e deixe o comando de inicialização do container em branco. Por fim você poderia abrir um terminal interativo, que me permita fazer entradas de texto, do tipo sh? Obrigada&rdquo;</p>
 <h3 id="espera-aí-aqui-deu-erro">Espera aí, aqui deu erro!</h3>
 <p>Algumas pessoas que utilizam Windows tiveram um erro ao tentar executar o comando acima, algo parecido com isso (Obrigada a Naty que nos cedeu a imagem):</p>
-<p><img src="../../static/primerios-passos-com-docker/imagens/erro-windows.png" alt="erro windows"></p>
+<p><img src="/primerios-passos-com-docker/imagens/erro-windows.png" alt="erro windows"></p>
 <p>Nele o docker interpreta o sh do final como a tentativa de importar outra imagem e vira tudo uma bagunça. A Giuliana - que falou sobre a Instalação do Docker -, conseguiu uma solução. Caso você tenha esbarrado nesse erro tente executar da seguinte forma:</p>
 <pre><code>&gt; docker container run -it -v ${PWD}:/app -w /app --entrypoint='' hashicorp/terraform:light sh
 </code></pre><p>Agora nós temos um container rodando e se dermos um <em>ls</em> poderemos ver nossos arquivos dentro do container como pedimos:</p>
-<p><img src="../../static/primerios-passos-com-docker/imagens/container-terraform.jpeg" alt="container terraform"></p>
+<p><img src="/primerios-passos-com-docker/imagens/container-terraform.jpeg" alt="container terraform"></p>
 <p>O mesmo aconteceria se abríssemos o terminal do VSCode:</p>
-<p><img src="../../static/primerios-passos-com-docker/imagens/terminal-vsc.jpeg" alt="terminalvsc"></p>
+<p><img src="/primerios-passos-com-docker/imagens/terminal-vsc.jpeg" alt="terminalvsc"></p>
 <p>Agora que estamos no mesmo cenário que o início do curso, exporte suas variáveis AWS_ACCESS_KEY_ID e AWS_SECRET_ACCESS_KEY</p>
 <pre><code># export AWS_ACCESS_KEY_ID= 
 </code></pre><pre><code># export AWS_SECRET_ACCESS_KEY= 
 </code></pre><p>Finalmente, poderemos dar início ao curso com</p>
 <pre><code># terraform init
-</code></pre><p><img src="../../static/primerios-passos-com-docker/imagens/terraform-init.jpeg" alt="terraformiit"></p>
+</code></pre><p><img src="/primerios-passos-com-docker/imagens/terraform-init.jpeg" alt="terraformiit"></p>
 <p>Agora seus problemas com Docker estão resolvidos, aproveite o curso e, se precisar de ajuda, estamos à disposição no grupo do telegram do curso.</p>
 <h2 id="um-pouco-além">Um Pouco Além</h2>
 <p>Já estamos no ponto em que devemos para fazer o curso, mas se você gostou do Docker e quer aprender mais, temos umas coisinhas pra falar.</p>
@@ -191,7 +191,7 @@ Eu salvei os arquivos da primeira aula <a href="https://github.com/chamaasminas/
 <pre><code>docker container run [opções] imagem [comando] [argumentos]
 </code></pre><p>No nosso caso, podemos rodar um container de hello-world como:</p>
 <pre><code>docker container run hello-world
-</code></pre><p><img src="../../static/primerios-passos-com-docker/imagens/docker-container-run.jpeg" alt="docker container run"></p>
+</code></pre><p><img src="/primerios-passos-com-docker/imagens/docker-container-run.jpeg" alt="docker container run"></p>
 <p>Novamente segundo a <a href="https://docs.docker.com/engine/reference/commandline/container/">documentação</a>, o comando <strong>docker container</strong> é o ideal para gerenciar containers docker. Nesse link acima você pode verificar os vários comandos possíveis e suas sintaxes. Sinta-se a vontade para testar!</p>
 <ol start="2">
 <li><code>docker container ls</code></li>
@@ -199,7 +199,7 @@ Eu salvei os arquivos da primeira aula <a href="https://github.com/chamaasminas/
 <p>Da mesma forma que o item anterior, é possível utilizar o <a href="https://docs.docker.com/engine/reference/commandline/container_ls/"><em>docker container</em></a> para listar os containers em execução, em substituição ao <em>docker ps</em> que utilizamos no curso e no começo do material.</p>
 <p>No link que inserimos você pode ver todas as flags possíveis a esse comando, cuja sintaxe é:</p>
 <p><code>docker container ls [opções]</code></p>
-<p><img src="../../static/primerios-passos-com-docker/imagens/docker-container-ls.jpeg" alt="docker container ls"></p>
+<p><img src="/primerios-passos-com-docker/imagens/docker-container-ls.jpeg" alt="docker container ls"></p>
 <p>Aqui listamos primeiramente os containers ativos e depois todos os containers na máquina.</p>
 <p>Por último, caso você queira saber e praticar mais, sugiro que utilize o <a href="https://www.docker.com/play-with-docker">Play With Docker</a>. É uma seção com tutoriais e laboratórios sobre docker, onde é possível testar e implementar algumas coisas rapidamente. Vale muito a pena dar uma olhada!</p>
 <p>Boa jornada!</p>
