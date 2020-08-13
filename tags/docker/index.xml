@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>posts on Chama as Minas</title>
-    <link>https://chamaasminas.github.io/tags/posts/</link>
-    <description>Recent content in posts on Chama as Minas</description>
+    <title>docker on Chama as Minas</title>
+    <link>https://chamaasminas.github.io/tags/docker/</link>
+    <description>Recent content in docker on Chama as Minas</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
     <lastBuildDate>Thu, 13 Aug 2020 15:57:39 -0300</lastBuildDate>
     
-	<atom:link href="https://chamaasminas.github.io/tags/posts/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://chamaasminas.github.io/tags/docker/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -21,20 +21,6 @@
       <description>Você já deve ter passado pelos vídeos de Como Instalar o Docker, e talvez tenha se perguntado &amp;ldquo;O que exatamente é Docker?&amp;rdquo;
 Primeiramente podemos definir Docker como uma ferramenta de containerização, desenvolvida pela Docker Inc, mas que é opensource. Basicamente o docker permite que a gente divida as aplicações em serviços e rode esses serviços separadamente, aumentando segurança, escalabilidade e várias coisas legais.
 Do início: Antes de explicar o que é um container e entrar sobre a forma que utilizamos no curso de Terraform, vamos entender a organização de projetos em Docker.</description>
-    </item>
-    
-    <item>
-      <title>Como postar no nosso blog</title>
-      <link>https://chamaasminas.github.io/posts/post1/</link>
-      <pubDate>Wed, 05 Aug 2020 20:21:42 +0100</pubDate>
-      
-      <guid>https://chamaasminas.github.io/posts/post1/</guid>
-      <description>Esse primeiro post é para explicar para as gurias que estão juntas no making off do #chamaasminas como criar posts no nosso blog ˆ-ˆ
-Antes de tudo instalar o HUGO
-1- Clonar o nosso repo do Blog no diretorio que vc desejar
-1.1 - Clonar o repositorio do nosso githubpages dentro do repositorio do BLOG
-2- Entrar no diretorio do BLOG
-3- Você pode rodar no terminal hudo server -D  e vai conseguir visualizar todas suas modificações no localhost:/1313</description>
     </item>
     
   </channel>

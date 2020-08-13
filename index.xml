@@ -7,10 +7,21 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
-    <lastBuildDate>Wed, 05 Aug 2020 20:21:42 +0100</lastBuildDate>
+    <lastBuildDate>Thu, 13 Aug 2020 15:57:39 -0300</lastBuildDate>
     
 	<atom:link href="https://chamaasminas.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Primeiros Passos com Docker</title>
+      <link>https://chamaasminas.github.io/posts/primeiros-passos-docker/</link>
+      <pubDate>Thu, 13 Aug 2020 15:57:39 -0300</pubDate>
+      
+      <guid>https://chamaasminas.github.io/posts/primeiros-passos-docker/</guid>
+      <description>Você já deve ter passado pelos vídeos de Como Instalar o Docker, e talvez tenha se perguntado &amp;ldquo;O que exatamente é Docker?&amp;rdquo;
+Primeiramente podemos definir Docker como uma ferramenta de containerização, desenvolvida pela Docker Inc, mas que é opensource. Basicamente o docker permite que a gente divida as aplicações em serviços e rode esses serviços separadamente, aumentando segurança, escalabilidade e várias coisas legais.
+Do início: Antes de explicar o que é um container e entrar sobre a forma que utilizamos no curso de Terraform, vamos entender a organização de projetos em Docker.</description>
+    </item>
     
     <item>
       <title>Como postar no nosso blog</title>

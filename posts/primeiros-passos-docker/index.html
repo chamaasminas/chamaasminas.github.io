@@ -1,32 +1,93 @@
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-	<channel>
-		<title>Posts on Chama as Minas</title>
-		<link>https://chamaasminas.github.io/posts/</link>
-		<description>Recent content in Posts on Chama as Minas</description>
-		<generator>Hugo -- gohugo.io</generator>
-		<language>en-us</language>
-		<copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
-		<lastBuildDate>Thu, 13 Aug 2020 15:57:39 -0300</lastBuildDate>
-		<atom:link href="https://chamaasminas.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
-		
-		<item>
-			<title>Primeiros Passos com Docker</title>
-			<link>https://chamaasminas.github.io/posts/primeiros-passos-docker/</link>
-			<pubDate>Thu, 13 Aug 2020 15:57:39 -0300</pubDate>
-			
-			<guid>https://chamaasminas.github.io/posts/primeiros-passos-docker/</guid>
-			<description>Você já deve ter passado pelos vídeos de Como Instalar o Docker, e talvez tenha se perguntado &amp;ldquo;O que exatamente é Docker?&amp;rdquo;
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="theme-color" content="#494f5c">
+	<meta name="msapplication-TileColor" content="#494f5c">
+<meta itemprop="name" content="Primeiros Passos com Docker">
+<meta itemprop="description" content="Você já deve ter passado pelos vídeos de Como Instalar o Docker, e talvez tenha se perguntado &ldquo;O que exatamente é Docker?&rdquo;
 Primeiramente podemos definir Docker como uma ferramenta de containerização, desenvolvida pela Docker Inc, mas que é opensource. Basicamente o docker permite que a gente divida as aplicações em serviços e rode esses serviços separadamente, aumentando segurança, escalabilidade e várias coisas legais.
-Do início: Antes de explicar o que é um container e entrar sobre a forma que utilizamos no curso de Terraform, vamos entender a organização de projetos em Docker.</description>
-			<content type="html"><![CDATA[<p>Você já deve ter passado pelos vídeos de <a href="https://www.youtube.com/watch?v=Hg4i7f5SdWI&amp;list=PLASqcNvBI-ScSDL7FZtGyxt1WnXBItQoP&amp;index=4">Como Instalar o Docker</a>, e talvez tenha se perguntado &ldquo;O que exatamente é Docker?&rdquo;</p>
+Do início: Antes de explicar o que é um container e entrar sobre a forma que utilizamos no curso de Terraform, vamos entender a organização de projetos em Docker.">
+<meta itemprop="datePublished" content="2020-08-13T15:57:39-03:00" />
+<meta itemprop="dateModified" content="2020-08-13T15:57:39-03:00" />
+<meta itemprop="wordCount" content="2027">
+
+
+
+<meta itemprop="keywords" content="posts,docker," />
+<meta property="og:title" content="Primeiros Passos com Docker" />
+<meta property="og:description" content="Você já deve ter passado pelos vídeos de Como Instalar o Docker, e talvez tenha se perguntado &ldquo;O que exatamente é Docker?&rdquo;
+Primeiramente podemos definir Docker como uma ferramenta de containerização, desenvolvida pela Docker Inc, mas que é opensource. Basicamente o docker permite que a gente divida as aplicações em serviços e rode esses serviços separadamente, aumentando segurança, escalabilidade e várias coisas legais.
+Do início: Antes de explicar o que é um container e entrar sobre a forma que utilizamos no curso de Terraform, vamos entender a organização de projetos em Docker." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://chamaasminas.github.io/posts/primeiros-passos-docker/" />
+<meta property="article:published_time" content="2020-08-13T15:57:39-03:00" />
+<meta property="article:modified_time" content="2020-08-13T15:57:39-03:00" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Primeiros Passos com Docker"/>
+<meta name="twitter:description" content="Você já deve ter passado pelos vídeos de Como Instalar o Docker, e talvez tenha se perguntado &ldquo;O que exatamente é Docker?&rdquo;
+Primeiramente podemos definir Docker como uma ferramenta de containerização, desenvolvida pela Docker Inc, mas que é opensource. Basicamente o docker permite que a gente divida as aplicações em serviços e rode esses serviços separadamente, aumentando segurança, escalabilidade e várias coisas legais.
+Do início: Antes de explicar o que é um container e entrar sobre a forma que utilizamos no curso de Terraform, vamos entender a organização de projetos em Docker."/>
+
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	<link rel="manifest" href="/site.webmanifest">
+	<link rel="mask-icon" href="/safari-pinned-tab.svg" color="">
+	<link rel="shortcut icon" href="/favicon.ico">
+
+	<title>Primeiros Passos com Docker</title>
+	<link rel="stylesheet" href="https://chamaasminas.github.io/css/style.min.eac77496566fd7d5768fd650ddb0b2b181ca6a2d7c5fdd6fe6b8ba4bf47e566f.css" integrity="sha256-6sd0llZv19V2j9ZQ3bCysYHKai18X91v5ri6S/R+Vm8=" crossorigin="anonymous">
+	
+</head>
+
+<body id="page">
+	
+	<header id="site-header" class="animated slideInUp">
+		<div class="hdr-wrapper section-inner">
+			<div class="hdr-left">
+				<div class="site-branding">
+					<a href="https://chamaasminas.github.io">Chama as Minas</a>
+				</div>
+				<nav class="site-nav hide-in-mobile">
+					
+				<a href="https://chamaasminas.github.io/posts/">Posts</a>
+				<a href="https://chamaasminas.github.io/page/about">About</a>
+
+				</nav>
+			</div>
+			<div class="hdr-right hdr-icons">
+				<span class="hdr-social hide-in-mobile"><a href="https://github.com/chamaasminas" target="_blank" rel="noopener me" title="Github"><svg xmlns="http://www.w3.org/2000/svg" class="feather" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg></a></span><button id="menu-btn" class="hdr-btn" title="Menu"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg></button>
+			</div>
+		</div>
+	</header>
+	<div id="mobile-menu" class="animated fast">
+		<ul>
+			<li><a href="https://chamaasminas.github.io/posts/">Posts</a></li>
+			<li><a href="https://chamaasminas.github.io/page/about">About</a></li>
+		</ul>
+	</div>
+
+
+	<main class="site-main section-inner animated fadeIn faster">
+		<article class="thin">
+			<header class="post-header">
+				<div class="post-meta"><span>Aug 13, 2020</span></div>
+				<h1>Primeiros Passos com Docker</h1>
+			</header>
+			<div class="content">
+				<p>Você já deve ter passado pelos vídeos de <a href="https://www.youtube.com/watch?v=Hg4i7f5SdWI&amp;list=PLASqcNvBI-ScSDL7FZtGyxt1WnXBItQoP&amp;index=4">Como Instalar o Docker</a>, e talvez tenha se perguntado &ldquo;O que exatamente é Docker?&rdquo;</p>
 <p>Primeiramente podemos definir Docker como uma ferramenta de containerização, desenvolvida pela Docker Inc, mas que é opensource. Basicamente o docker permite que a gente divida as aplicações em serviços e rode esses serviços separadamente, aumentando segurança, escalabilidade e várias coisas legais.</p>
-<h2 id="do-início">Do início:</h2>
+<h2 id="do-início">Do início:<a href="#do-início" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h2>
 <p>Antes de explicar o que é um container e entrar sobre a forma que utilizamos no curso de Terraform, vamos entender a organização de projetos em Docker.</p>
-<h2 id="imagens">Imagens</h2>
+<h2 id="imagens">Imagens<a href="#imagens" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h2>
 <p>Os containers administrados pelo Docker são gerados através de imagens, que são mantidas pela comunidade ou pelas empresas proprietárias das ferramentas.</p>
 <p>Uma imagem é formada por camadas, que juntas têm os recursos, códigos, bibliotecas e configurações necessários para rodar o serviço. Dessa forma os containers que usarem essa imagem específica serão todos iguais, evitando conflitos de configuração de ambientes durante a implementação de aplicações.</p>
 <p>Essa imagem é disponibilizada no <a href="https://hub.docker.com/">Docker Hub</a>, e isso permite que outras aplicações usem essas imagens de base, economizando o tempo que se gastaria para deixar um ambiente &lsquo;igual&rsquo; ao outro.</p>
-<h2 id="o-que-é-container">O que é container</h2>
+<h2 id="o-que-é-container">O que é container<a href="#o-que-é-container" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h2>
 <p>Certo, entendemos que o Docker serve pra administrar containers e que as imagens são a base desses containers, mas o que é <strong>realmente</strong> um container?</p>
 <p>Segundo o <a href="https://www.docker.com/resources/what-container">site do Docker</a>, &ldquo;<em>Um container é uma unidade padrão de software que empacota o código e todas as suas dependências para que a aplicação seja executada de maneira rápida e confiável de um ambiente de computação para outro</em>&rdquo;</p>
 <p>Em resumo, o container é uma pequena máquina pré-configurada através da imagem de origem.</p>
@@ -35,14 +96,14 @@ Do início: Antes de explicar o que é um container e entrar sobre a forma que u
 <li>Há apenas uma forma, mas é possível fazer diversos bolos nela. Todos eles terão o mesmo formato, mas serão independentes entre si - como os containers.</li>
 </ul>
 <p>Dentro do curso nós utilizamos um container baseado na imagem terraform da Hashicorp - empresa mantenedora. Isso garantiu que todas as pessoas teriam as mesmas ferramentas, recursos e configurações para rodar o terraform.</p>
-<h2 id="rodando-o-hello-world">Rodando o Hello World</h2>
+<h2 id="rodando-o-hello-world">Rodando o Hello World<a href="#rodando-o-hello-world" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h2>
 <p>Agora que você já tem o Docker instalado e já sabe os conceitos iniciais, vamos fazer um teste pra saber se tudo está rodando legal: Vamos o rodar o Hello World</p>
 <p>Vamos criar um container a partir de uma imagem chamada hello-world, que quando estiver rodando imprimirá no terminal o famoso &ldquo;Hello World&rdquo;</p>
 <p>Antes de começar vamos a como funciona o nosso primeiro comando:</p>
-<h4 id="comandos-docker---rodando-um-container-_docker-run_">Comandos Docker - Rodando um container &lt;_docker run_&gt;</h4>
+<h4 id="comandos-docker---rodando-um-container-_docker-run_">Comandos Docker - Rodando um container &lt;_docker run_&gt;<a href="#comandos-docker---rodando-um-container-_docker-run_" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h4>
 <p><code>$ docker run [imagem]</code></p>
 <p>Isso criará um container a partir da imagem passada. Caso você não tenha ela no seu computador, o docker a buscará no <em>Docker Hub</em> e então criará o container.</p>
-<h4 id="comandos-docker---listando-imagens-locais-_docker-images_">Comandos Docker - listando imagens locais &lt;_docker images_&gt;</h4>
+<h4 id="comandos-docker---listando-imagens-locais-_docker-images_">Comandos Docker - listando imagens locais &lt;_docker images_&gt;<a href="#comandos-docker---listando-imagens-locais-_docker-images_" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h4>
 <p>Para verificar as imagens que você tem na sua máquina basta rodar o comando</p>
 <p><code>$ docker images</code></p>
 <p><img src="../../static/primerios-passos-com-docker/imagens/dockerimages.jpeg" alt="docker images"></p>
@@ -69,7 +130,7 @@ Share images, automate workflows, and more with a free Docker ID:
 
 For more examples and ideas, visit:
  https://docs.docker.com/get-started/
-</code></pre><h2 id="entrando-num-container">Entrando num container</h2>
+</code></pre><h2 id="entrando-num-container">Entrando num container<a href="#entrando-num-container" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h2>
 <p>Você se lembrará de que no curso nós rodamos um container terraform e fizemos modificações nele, alteramos arquivos, usamos a linha de comando, mudamos coisas de lugar. Como isso é possível se o container é formado a partir de uma imagem?</p>
 <p>Pois bem, vamos ver agora uma forma de entrar num container e verificar seu conteúdo e utilizar ferramentas.
 Para essa demonstração vamos utilizar <a href="https://hub.docker.com/_/golang">uma imagem da linguagem GO</a>.</p>
@@ -88,7 +149,7 @@ Para essa demonstração vamos utilizar <a href="https://hub.docker.com/_/golang
 <p><img src="../../static/primerios-passos-com-docker/imagens/run-golang.jpeg" alt="Dentro do container"></p>
 <p>Vemos agora que estamos no usuário &ldquo;root&rdquo;, no container de ID &ldquo;bea1898936a0&rdquo;, e na pasta /go.
 Se abrirmos outro terminal e verificarmos os containers que estão rodando, poderemos ver nosso container GO lá:</p>
-<h4 id="comandos-docker---listando-containers-em-execução---_docker-ps_">Comandos docker - Listando containers em execução - &lt;_docker ps_&gt;</h4>
+<h4 id="comandos-docker---listando-containers-em-execução---_docker-ps_">Comandos docker - Listando containers em execução - &lt;_docker ps_&gt;<a href="#comandos-docker---listando-containers-em-execução---_docker-ps_" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h4>
 <p><code>$ docker ps</code></p>
 <p><img src="../../static/primerios-passos-com-docker/imagens/container-go-rodando.jpeg" alt="docker ps"></p>
 <p>Dentro do container podemos utilizar comandos bash para transitarmos entre pastas, criarmos arquivos e editá-los da forma que quisermos. Para conhecer melhor esses comandos, acesse o artigo <a href="link.post.comandos">Comandos Linux</a> (em breve estará disponível).
@@ -116,7 +177,7 @@ func main() {
 <pre><code>&gt; $ go build hello-go.go
 &gt; $ ./hello-go
 </code></pre><p><img src="../../static/primerios-passos-com-docker/imagens/dentro-container-3.jpeg" alt="passo3"></p>
-<h2 id="criando-um-container-com-terraform">Criando um container com Terraform</h2>
+<h2 id="criando-um-container-com-terraform">Criando um container com Terraform<a href="#criando-um-container-com-terraform" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h2>
 <p>Já vimos que aparentemente tudo está funcionando corretamente, jóia!
 Agora vamos voltar um pouco mais para o cenário do curso e vamos rodar um container com o terraform.</p>
 <p>Vamos até o <a href="hub.docker.com">Docker Hub</a> e pesquisaremos por <em>terraform</em></p>
@@ -165,7 +226,7 @@ Eu salvei os arquivos da primeira aula <a href="https://github.com/chamaasminas/
 </ul>
 <p>Ok, bastante informação, vamos traduzir de forma mais amigável. O que pedimos dessa vez foi algo do tipo:</p>
 <p>&ldquo;Ah, olá docker, eu de novo. Dessa vez por favor, rode um container a partir da imagem hashicorp/terraform, aquela que é marcada como light, crie também um volume da minha pasta local atual para a pasta /app dentro do container, faça com que as alterações que eu fizer sejam feitas nessa pasta e deixe o comando de inicialização do container em branco. Por fim você poderia abrir um terminal interativo, que me permita fazer entradas de texto, do tipo sh? Obrigada&rdquo;</p>
-<h3 id="espera-aí-aqui-deu-erro">Espera aí, aqui deu erro!</h3>
+<h3 id="espera-aí-aqui-deu-erro">Espera aí, aqui deu erro!<a href="#espera-aí-aqui-deu-erro" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h3>
 <p>Algumas pessoas que utilizam Windows tiveram um erro ao tentar executar o comando acima, algo parecido com isso (Obrigada a Naty que nos cedeu a imagem):</p>
 <p><img src="../../static/primerios-passos-com-docker/imagens/erro-windows.png" alt="erro windows"></p>
 <p>Nele o docker interpreta o sh do final como a tentativa de importar outra imagem e vira tudo uma bagunça. A Giuliana - que falou sobre a Instalação do Docker -, conseguiu uma solução. Caso você tenha esbarrado nesse erro tente executar da seguinte forma:</p>
@@ -181,7 +242,7 @@ Eu salvei os arquivos da primeira aula <a href="https://github.com/chamaasminas/
 <pre><code># terraform init
 </code></pre><p><img src="../../static/primerios-passos-com-docker/imagens/terraform-init.jpeg" alt="terraformiit"></p>
 <p>Agora seus problemas com Docker estão resolvidos, aproveite o curso e, se precisar de ajuda, estamos à disposição no grupo do telegram do curso.</p>
-<h2 id="um-pouco-além">Um Pouco Além</h2>
+<h2 id="um-pouco-além">Um Pouco Além<a href="#um-pouco-além" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h2>
 <p>Já estamos no ponto em que devemos para fazer o curso, mas se você gostou do Docker e quer aprender mais, temos umas coisinhas pra falar.</p>
 <p>A primeira coisa é que alguns dos comandos que utilizamos têm alternativas, especificamente os comandos <em>docker run</em>, para rodar um container, e o <em>docker ps</em>, para listar os containers ativos.</p>
 <ol>
@@ -204,39 +265,38 @@ Eu salvei os arquivos da primeira aula <a href="https://github.com/chamaasminas/
 <p>Por último, caso você queira saber e praticar mais, sugiro que utilize o <a href="https://www.docker.com/play-with-docker">Play With Docker</a>. É uma seção com tutoriais e laboratórios sobre docker, onde é possível testar e implementar algumas coisas rapidamente. Vale muito a pena dar uma olhada!</p>
 <p>Boa jornada!</p>
 <p>#ChamaAsMina</p>
-]]></content>
-		</item>
-		
-		<item>
-			<title>Como postar no nosso blog</title>
-			<link>https://chamaasminas.github.io/posts/post1/</link>
-			<pubDate>Wed, 05 Aug 2020 20:21:42 +0100</pubDate>
-			
-			<guid>https://chamaasminas.github.io/posts/post1/</guid>
-			<description>Esse primeiro post é para explicar para as gurias que estão juntas no making off do #chamaasminas como criar posts no nosso blog ˆ-ˆ
-Antes de tudo instalar o HUGO
-1- Clonar o nosso repo do Blog no diretorio que vc desejar
-1.1 - Clonar o repositorio do nosso githubpages dentro do repositorio do BLOG
-2- Entrar no diretorio do BLOG
-3- Você pode rodar no terminal hudo server -D  e vai conseguir visualizar todas suas modificações no localhost:/1313</description>
-			<content type="html"><![CDATA[<p>Esse primeiro post é para explicar para as gurias que estão juntas no making off do #chamaasminas como criar posts no nosso blog <strong>ˆ-ˆ</strong></p>
-<p><strong>Antes</strong> de tudo instalar o <a href="https://gohugo.io/getting-started/quick-start/">HUGO</a></p>
-<p>1- Clonar o nosso repo do <a href="https://github.com/chamaasminas/chamaasminas.hugo.io">Blog</a> no diretorio que vc desejar</p>
-<p>1.1 - Clonar o repositorio do nosso <a href="https://github.com/chamaasminas/chamaasminas.github.io">githubpages</a> dentro do repositorio do <strong>BLOG</strong></p>
-<p>2- Entrar no diretorio <strong>do BLOG</strong></p>
-<p>3- Você pode rodar no terminal <code>hudo server -D </code> e vai conseguir visualizar todas suas modificações no localhost:/1313</p>
-<p>4- Para criar outro post no terminal digite <code>hugo new post/&lt;nome-do-post-curto&gt;.md </code>
-No diretório será criado seu post
-<img src="/postex.png" alt="post"></p>
-<p>5- Quando clicar no seu post terá uma estrutura +- assim
-<img src="/structure-post.png" alt="structure"></p>
-<p>Em <strong>&ldquo;Title&rdquo;</strong> você pode renomear pro título que quiser isso não influenciará em nada</p>
-<p>O draft está como <strong>false</strong> pois assim sempre que eu pedir pro o post ser publicado ele não ficará em draft</p>
-<p>Abaixo do <strong>&quot;&mdash;&quot;</strong> você poderá escrever seu post</p>
-<p>6- Vamos Publicar, para isso é só rodar no seu terminal <code>hugo -d chamaasminas.github.io</code></p>
-<p>7- Será necessário comittar tanto o código do <a href="https://github.com/chamaasminas/chamaasminas.hugo.io">Blog</a> e do <a href="https://github.com/chamaasminas/chamaasminas.github.io">githubpages</a></p>
-]]></content>
-		</item>
-		
-	</channel>
-</rss>
+
+			</div>
+			<hr class="post-end">
+			<footer class="post-info">
+				<p>
+					<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag meta-icon"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line></svg><span class="tag"><a href="https://chamaasminas.github.io/tags/posts">posts</a></span><span class="tag"><a href="https://chamaasminas.github.io/tags/docker">docker</a></span>
+				</p>
+				<p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>2027 Words</p>
+				<p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>2020-08-13 15:57 -0300</p>
+			</footer>
+		</article>
+		<div class="post-nav thin">
+			<a class="prev-post" href="https://chamaasminas.github.io/posts/post1/">
+				<span class="post-nav-label">Older&nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></span><br><span>Como postar no nosso blog</span>
+			</a>
+		</div>
+		<div id="comments" class="thin">
+</div>
+	</main>
+
+	<footer id="site-footer" class="section-inner thin animated fadeIn faster">
+		<p>&copy; 2020 <a href="https://chamaasminas.github.io">chamaasminas</a> &#183; <a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a></p>
+		<p>
+			Made with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> &#183; Theme <a href="https://github.com/Track3/hermit" target="_blank" rel="noopener">Hermit</a> &#183; <a href="https://chamaasminas.github.io/posts/index.xml" target="_blank" title="rss"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-rss"><path d="M4 11a9 9 0 0 1 9 9"></path><path d="M4 4a16 16 0 0 1 16 16"></path><circle cx="5" cy="19" r="1"></circle></svg></a>
+		</p>
+	</footer>
+
+
+
+	<script src="https://chamaasminas.github.io/js/bundle.min.4a9a0ac3d2217822c7865b4161e6c2a71de1d70492264337755427898dd718f6.js" integrity="sha256-SpoKw9IheCLHhltBYebCpx3h1wSSJkM3dVQniY3XGPY=" crossorigin="anonymous"></script>
+	
+
+</body>
+
+</html>
